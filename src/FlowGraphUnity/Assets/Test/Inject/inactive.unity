@@ -1,0 +1,1092 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 10
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &73338047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 73338049}
+  - component: {fileID: 73338048}
+  m_Layer: 0
+  m_Name: Inactive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &73338048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73338047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70256d81cb634b04eac6afc5310f9d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph:
+    data:
+      name: 
+      nodes:
+      - id: ba72b40de4ee4d66a777f4ae37b2df8e
+        typeName: FlowGraph.Model.GraphStartEvent
+        flowOutputs:
+        - port: Start
+          targetNodeId: e25c0d54a5b74319a328c5b0bb25e22e
+          targetPort: In
+        valueInputs: []
+        position: {x: 50, y: 100}
+        properties: []
+      - id: 7b86e50aa85344c1aa912b5f83135e10
+        typeName: FlowGraph.Model.StringValue
+        flowOutputs: []
+        valueInputs: []
+        position: {x: 58, y: 344}
+        properties:
+        - field: value
+          value:
+            typeCode: 18
+            stringValue: child1
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+      - id: 9d7fdc10ff014430a2e48cc707964149
+        typeName: FlowGraph.Model.CallMethod
+        flowOutputs: []
+        valueInputs:
+        - port: name
+          targetNodeId: 7b86e50aa85344c1aa912b5f83135e10
+          targetPort: string
+        position: {x: 204, y: 239}
+        properties:
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: UnityEngine.GameObject FindGameObject(UnityEngine.Transform,
+              System.String)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: UnityEngine.GameObject FindGameObject(UnityEngine.Transform,
+              System.String)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: isCoroutine
+          value:
+            typeCode: 3
+            stringValue: False
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: UnityEngine.GameObject FindGameObject(UnityEngine.Transform,
+              System.String)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+      - id: e25c0d54a5b74319a328c5b0bb25e22e
+        typeName: FlowGraph.Model.CallMethod
+        flowOutputs: []
+        valueInputs:
+        - port: go
+          targetNodeId: 9d7fdc10ff014430a2e48cc707964149
+          targetPort: gameObject
+        position: {x: 307, y: 149}
+        properties:
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: Void Inactive(UnityEngine.GameObject)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: Void Inactive(UnityEngine.GameObject)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: isCoroutine
+          value:
+            typeCode: 3
+            stringValue: False
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: Void Inactive(UnityEngine.GameObject)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+      variables:
+      - name: var1
+        defaultValue:
+          typeCode: 13
+          stringValue: 0
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        mode: 0
+      assets: []
+    assetData: {fileID: 0}
+    dataType: 1
+    inputs: []
+--- !u!4 &73338049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73338047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.2640915, y: 2.5156975, z: 3.1350307}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1677030171}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &405090194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 405090196}
+  - component: {fileID: 405090195}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &405090195
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405090194}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &405090196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405090194}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &492478572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 492478574}
+  - component: {fileID: 492478573}
+  m_Layer: 0
+  m_Name: FindComponent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &492478573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492478572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70256d81cb634b04eac6afc5310f9d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph:
+    data:
+      name: 
+      nodes:
+      - id: ba72b40de4ee4d66a777f4ae37b2df8e
+        typeName: FlowGraph.Model.GraphStartEvent
+        flowOutputs:
+        - port: Start
+          targetNodeId: 863897182fb64bfe8664b0797290da51
+          targetPort: In
+        valueInputs: []
+        position: {x: 50, y: 100}
+        properties: []
+      - id: 7b86e50aa85344c1aa912b5f83135e10
+        typeName: FlowGraph.Model.StringValue
+        flowOutputs: []
+        valueInputs: []
+        position: {x: 42, y: 366}
+        properties:
+        - field: value
+          value:
+            typeCode: 18
+            stringValue: UnityEngine.BoxCollider
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+      - id: d3d5d72e8094481ca1fb0cc291b9d218
+        typeName: FlowGraph.Model.CallMethod
+        flowOutputs: []
+        valueInputs:
+        - port: typeName
+          targetNodeId: 7b86e50aa85344c1aa912b5f83135e10
+          targetPort: string
+        position: {x: 132, y: 241}
+        properties:
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: UnityEngine.Component FindComponent(UnityEngine.Transform,
+              System.String, System.String)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: UnityEngine.Component FindComponent(UnityEngine.Transform,
+              System.String, System.String)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: isCoroutine
+          value:
+            typeCode: 3
+            stringValue: False
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: UnityEngine.Component FindComponent(UnityEngine.Transform,
+              System.String, System.String)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+      - id: 863897182fb64bfe8664b0797290da51
+        typeName: FlowGraph.Model.CallMethod
+        flowOutputs: []
+        valueInputs:
+        - port: component
+          targetNodeId: d3d5d72e8094481ca1fb0cc291b9d218
+          targetPort: component
+        position: {x: 298, y: 164}
+        properties:
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: Void Disable(UnityEngine.Component)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: Void Disable(UnityEngine.Component)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: isCoroutine
+          value:
+            typeCode: 3
+            stringValue: False
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: Void Disable(UnityEngine.Component)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+      variables: []
+      assets: []
+    assetData: {fileID: 0}
+    dataType: 1
+    inputs: []
+--- !u!4 &492478574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492478572}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.2640915, y: 2.5156975, z: 3.1350307}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2068996831}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1201279363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1201279365}
+  - component: {fileID: 1201279364}
+  m_Layer: 0
+  m_Name: Disable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1201279364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201279363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70256d81cb634b04eac6afc5310f9d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph:
+    data:
+      name: 
+      nodes:
+      - id: ba72b40de4ee4d66a777f4ae37b2df8e
+        typeName: FlowGraph.Model.GraphStartEvent
+        flowOutputs:
+        - port: Start
+          targetNodeId: 29b1b21f7d804b8298ec66708ac145dc
+          targetPort: In
+        valueInputs: []
+        position: {x: 50, y: 100}
+        properties: []
+      - id: 0f5e57ffbe7a44aabe238ab488e96288
+        typeName: FlowGraph.Model.ComponentValue
+        flowOutputs: []
+        valueInputs: []
+        position: {x: 62, y: 304}
+        properties:
+        - field: value
+          value:
+            typeCode: 100
+            stringValue: 
+            objectValue: {fileID: 1500815163}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+      - id: 049f2716c88f4443bbb8a6ce5960e33d
+        typeName: FlowGraph.Model.DeltaTimeValue
+        flowOutputs: []
+        valueInputs: []
+        position: {x: 390, y: 315}
+        properties: []
+      - id: 3eb756d56c5943e6ba48357141d2796c
+        typeName: FlowGraph.Model.ThisColliderValue
+        flowOutputs: []
+        valueInputs: []
+        position: {x: 48, y: 377}
+        properties: []
+      - id: 29b1b21f7d804b8298ec66708ac145dc
+        typeName: FlowGraph.Model.CallMethod
+        flowOutputs: []
+        valueInputs:
+        - port: component
+          targetNodeId: 0f5e57ffbe7a44aabe238ab488e96288
+          targetPort: component
+        position: {x: 275, y: 196}
+        properties:
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: Void Disable(UnityEngine.Component)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: Void Disable(UnityEngine.Component)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: isCoroutine
+          value:
+            typeCode: 3
+            stringValue: False
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: memberName
+          value:
+            typeCode: 18
+            stringValue: Void Disable(UnityEngine.Component)
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: typeName
+          value:
+            typeCode: 18
+            stringValue: FlowGraph.Model.UnityActions
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+      variables:
+      - name: var1
+        defaultValue:
+          typeCode: 13
+          stringValue: 0
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        mode: 0
+      assets: []
+    assetData: {fileID: 0}
+    dataType: 1
+    inputs: []
+--- !u!4 &1201279365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201279363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.2640915, y: 2.5156975, z: 3.1350307}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1500815162}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1277220367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1277220370}
+  - component: {fileID: 1277220369}
+  - component: {fileID: 1277220368}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1277220368
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277220367}
+  m_Enabled: 1
+--- !u!20 &1277220369
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277220367}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1277220370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277220367}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1500815161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1500815162}
+  - component: {fileID: 1500815163}
+  m_Layer: 0
+  m_Name: child1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1500815162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500815161}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1201279365}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1500815163
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500815161}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1677030170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677030171}
+  m_Layer: 0
+  m_Name: child1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1677030171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677030170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 73338049}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2068996830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2068996831}
+  - component: {fileID: 2068996832}
+  m_Layer: 0
+  m_Name: child1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2068996831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068996830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 492478574}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2068996832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068996830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

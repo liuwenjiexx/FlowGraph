@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2bfdfa73cd1ed43a9b07731e10b3f1, type: 3}
+  m_Name: asset
+  m_EditorClassIdentifier: 
+  graph:
+    name: 
+    nodes:
+    - id: fe5b97fc80ef4140981f1696a0a3afab
+      typeName: FlowGraph.Model.StringGetVariable
+      flowOutputs: []
+      valueInputs: []
+      position: {x: 88, y: 283}
+      properties:
+      - field: name
+        value:
+          typeCode: 18
+          stringValue: var1
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+    - id: c7504647de2345ababe4c317a5824fe9
+      typeName: FlowGraph.Model.GraphStartEvent
+      flowOutputs:
+      - port: Start
+        targetNodeId: 34ead4158017416da6f7130143b898b2
+        targetPort: In
+      valueInputs: []
+      position: {x: 70, y: 127}
+      properties: []
+    - id: 34ead4158017416da6f7130143b898b2
+      typeName: FlowGraph.Model.LogNode
+      flowOutputs: []
+      valueInputs:
+      - port: value
+        targetNodeId: fe5b97fc80ef4140981f1696a0a3afab
+        targetPort: string
+      position: {x: 250, y: 192}
+      properties: []
+    variables:
+    - name: var1
+      defaultValue:
+        typeCode: 18
+        stringValue: success
+        objectValue: {fileID: 0}
+        curveValue:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+      mode: 1
+    assets: []
