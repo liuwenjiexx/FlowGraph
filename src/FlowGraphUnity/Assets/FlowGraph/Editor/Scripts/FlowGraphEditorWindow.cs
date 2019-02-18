@@ -962,12 +962,12 @@ namespace FlowGraph.Editor
                                                 goNode.Value = (GameObject)item;
                                                 node = goNode;
                                             }
-                                            else if (item is Transform)
-                                            {
-                                                var transNode = new TransformValue();
-                                                transNode.Value = (Transform)item;
-                                                node = transNode;
-                                            }
+                                            /* else if (item is Transform)
+                                             {
+                                                 var transNode = new TransformValue();
+                                                 transNode.Value = (Transform)item;
+                                                 node = transNode;
+                                             }*/
                                             else if (item is Component)
                                             {
                                                 var cptNode = new ComponentValue();
@@ -2636,14 +2636,21 @@ namespace FlowGraph.Editor
             {
                 menu = new GenericMenu();
                 string menuItemName;
-                foreach (var pInfo in type.GetProperties())
+                foreach (var pInfo in type.GetProperties().OrderBy(o=>o.Name))
                 {
+                    //Network auto generate property
+                    if (pInfo.Name.StartsWith("Network"))
+                    {
+                        var f = type.GetField(pInfo.Name.Substring(7), BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
+                        if (f != null && f.IsDefined(typeof(UnityEngine.Networking.SyncVarAttribute), false))
+                            continue;
+                    }
 
+                    menuItemName = pInfo.DeclaringType.Name + "/" + pInfo.Name;
                     if (pInfo.CanRead)
                     {
                         if (pInfo.GetGetMethod().IsStatic)
                             continue;
-                        menuItemName = pInfo.Name;
                         menu.AddItem(new GUIContent("Get/" + menuItemName, "Property"), false, (o) =>
                         {
                             PropertyInfo p = (PropertyInfo)o;
@@ -2664,7 +2671,6 @@ namespace FlowGraph.Editor
                     {
                         if (pInfo.GetSetMethod().IsStatic)
                             continue;
-                        menuItemName = pInfo.Name;
                         menu.AddItem(new GUIContent("Set/" + menuItemName, "Property"), false, (o) =>
                         {
                             PropertyInfo p = (PropertyInfo)o;
@@ -2681,12 +2687,14 @@ namespace FlowGraph.Editor
                         }, pInfo);
                     }
                 }
-                foreach (var fInfo in type.GetFields())
+                foreach (var fInfo in type.GetFields().OrderBy(o => o.Name))
                 {
 
                     if (fInfo.IsStatic)
                         continue;
-                    menuItemName = fInfo.Name;
+
+                    menuItemName = fInfo.DeclaringType.Name + "/" + fInfo.Name;
+
                     menu.AddItem(new GUIContent("Get/" + menuItemName, "Field"), false, (o) =>
                     {
                         FieldInfo p = (FieldInfo)o;
@@ -2705,7 +2713,7 @@ namespace FlowGraph.Editor
 
                     if (!fInfo.IsInitOnly)
                     {
-                        menuItemName = fInfo.Name;
+
                         menu.AddItem(new GUIContent("Set/" + menuItemName, "Field"), false, (o) =>
                         {
                             FieldInfo p = (FieldInfo)o;

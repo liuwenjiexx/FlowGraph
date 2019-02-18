@@ -150,9 +150,9 @@ namespace FlowGraph.Model
         public override string GetDisplayName()
         {
             if (!Value)
-                return "missing(GameObject)";
-            //   return Value.name + "(GameObject)";
-            return "GameObject";
+                return string.Format("missing({0})", typeof(GameObject).Name);
+
+            return string.Format("{0}({1})", Value.name, typeof(GameObject).Name);
         }
     }
 
@@ -167,26 +167,25 @@ namespace FlowGraph.Model
         public override string GetDisplayName()
         {
             if (!Value)
-                return "missing(Component)";
-            //return Value.name + "(" + Value.GetType().Name + ")";
-            return Value.GetType().Name;
+                return string.Format("missing({0})", typeof(Component).Name);
+            return string.Format("{0}({1})", Value.name, Value.GetType().Name);
         }
 
     }
-    [Name("Transform")]
-    public class TransformValue : InputableValueNode<Transform>
-    {
-        protected override string OutputName
-        {
-            get { return Type_Transform; }
-        }
-        public override string GetDisplayName()
-        {
-            if (!Value)
-                return "missing(Transform)";
-            // return Value.name + "(Transform)";
-            return "Transform";
-        }
-    }
+
+    //[Name("Transform")]
+    //public class TransformValue : InputableValueNode<Transform>
+    //{
+    //    protected override string OutputName
+    //    {
+    //        get { return Type_Transform; }
+    //    }
+    //    public override string GetDisplayName()
+    //    {
+    //        if (!Value)
+    //            return string.Format("missing({0})", typeof(Transform).Name);
+    //        return string.Format("{0}({1})", Value.name, typeof(Transform).Name);
+    //    }
+    //}
 
 }

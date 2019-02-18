@@ -17,31 +17,31 @@ namespace FlowGraph.Model
 
         [Name("Active")]
         [Category(GameObjectCategory)]
-        public static void Active(GameObject go)
+        public static void Active(GameObject gameObject)
         {
-            if (go)
+            if (gameObject)
             {
-                go.SetActive(true);
+                gameObject.SetActive(true);
             }
         }
 
         [Name("Inactive")]
         [Category(GameObjectCategory)]
-        public static void Inactive(GameObject go)
+        public static void Inactive(GameObject gameObject)
         {
-            if (go)
+            if (gameObject)
             {
-                go.SetActive(false);
+                gameObject.SetActive(false);
             }
         }
 
         [Name("Destroy")]
         [Category(GameObjectCategory)]
-        public static void Destroy(GameObject go, float delay)
+        public static void Destroy(GameObject gameObject, float delay)
         {
-            if (go)
+            if (gameObject)
             {
-                Object.Destroy(go, delay);
+                Object.Destroy(gameObject, delay);
             }
         }
 

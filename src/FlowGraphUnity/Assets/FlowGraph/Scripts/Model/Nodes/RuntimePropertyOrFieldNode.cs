@@ -68,7 +68,12 @@ namespace FlowGraph.Model
             valueOut.SetValue(value);
 
         }
-        
+        public override string GetDisplayName()
+        {
+            if (string.IsNullOrEmpty(property))
+                return base.GetDisplayName();
+            return property;
+        }
     }
 
 
@@ -132,6 +137,11 @@ namespace FlowGraph.Model
         }
 
 
-
+        public override string GetDisplayName()
+        {
+            if (string.IsNullOrEmpty(property))
+                return base.GetDisplayName();
+            return string.Format("Set {0}", property);
+        }
     }
 }
