@@ -140,17 +140,32 @@ namespace FlowGraph.Model
         }
         protected override MemberInfo GetMember(Type type, string memberName)
         {
+            MemberInfo m = null;
             if (!string.IsNullOrEmpty(memberName))
             {
-                foreach (var m in type.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static))
+                var ms = type.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static);
+
+                foreach (var mInfo in ms)
                 {
-                    if (GetMethodSignatureString(m) == memberName)
+                    if (mInfo.Name == memberName)
                     {
-                        return m;
+                        m = mInfo;
+                        break;
+                    }
+                }
+                if (m == null)
+                {
+                    foreach (var mInfo in ms)
+                    {
+                        if (GetMethodSignatureString(mInfo) == memberName)
+                        {
+                            m = mInfo;
+                            break;
+                        }
                     }
                 }
             }
-            return null;
+            return m;
         }
 
         public override string GetDisplayName()
