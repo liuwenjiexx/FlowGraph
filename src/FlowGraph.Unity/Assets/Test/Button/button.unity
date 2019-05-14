@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -345,50 +345,6 @@ MonoBehaviour:
               m_PreInfinity: 2
               m_PostInfinity: 2
               m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: localScale
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Transform
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: localScale
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Transform
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
       - id: 9e7db283962d4029a0f3cc56f970bea4
         typeName: FlowGraph.Model.SetProperty
         flowOutputs: []
@@ -401,50 +357,6 @@ MonoBehaviour:
           targetPort: vector3
         position: {x: 402, y: 171}
         properties:
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: localScale
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Transform
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: localScale
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Transform
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
         - field: memberName
           value:
             typeCode: 18
@@ -485,29 +397,7 @@ MonoBehaviour:
         - field: memberName
           value:
             typeCode: 18
-            stringValue: Vector3 Vector3Lerp(Vector3, Vector3, Single)
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: FlowGraph.Model.UnityActions
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: Vector3 Vector3Lerp(Vector3, Vector3, Single)
+            stringValue: Vector3Lerp(UnityEngine.Vector3,UnityEngine.Vector3,F)UnityEngine.Vector3
             objectValue: {fileID: 0}
             curveValue:
               serializedVersion: 2
@@ -530,28 +420,6 @@ MonoBehaviour:
           value:
             typeCode: 3
             stringValue: False
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: Vector3 Vector3Lerp(Vector3, Vector3, Single)
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: FlowGraph.Model.UnityActions
             objectValue: {fileID: 0}
             curveValue:
               serializedVersion: 2
@@ -564,7 +432,7 @@ MonoBehaviour:
         flowOutputs: []
         valueInputs:
         - port: to
-          targetNodeId: a80b37dfa58f48a7a34ab0b1de359d85
+          targetNodeId: 474b46811e2d40a7a7ab620b3a50760d
           targetPort: float
         - port: curve
           targetNodeId: a46f217ac5b84aa4887e3055d38d360a
@@ -577,31 +445,7 @@ MonoBehaviour:
         - field: memberName
           value:
             typeCode: 18
-            stringValue: Single TimeInterpolator(Single, Single, UnityEngine.AnimationCurve,
-              Single)
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: FlowGraph.Model.UnityActions
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: Single TimeInterpolator(Single, Single, UnityEngine.AnimationCurve,
-              Single)
+            stringValue: TimeInterpolator(F,F,UnityEngine.AnimationCurve,F)F
             objectValue: {fileID: 0}
             curveValue:
               serializedVersion: 2
@@ -631,22 +475,16 @@ MonoBehaviour:
               m_PreInfinity: 2
               m_PostInfinity: 2
               m_RotationOrder: 4
-        - field: memberName
+      - id: 474b46811e2d40a7a7ab620b3a50760d
+        typeName: FlowGraph.Model.Float32Value
+        flowOutputs: []
+        valueInputs: []
+        position: {x: 211, y: 544}
+        properties:
+        - field: value
           value:
-            typeCode: 18
-            stringValue: Single TimeInterpolator(Single, Single, UnityEngine.AnimationCurve,
-              Single)
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: FlowGraph.Model.UnityActions
+            typeCode: 13
+            stringValue: 1
             objectValue: {fileID: 0}
             curveValue:
               serializedVersion: 2
@@ -1029,50 +867,6 @@ MonoBehaviour:
               m_PreInfinity: 2
               m_PostInfinity: 2
               m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: localScale
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Transform
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: localScale
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Transform
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
       - id: 9165b9f8adbd439a896718e652bfd9f4
         typeName: FlowGraph.Model.SetProperty
         flowOutputs: []
@@ -1082,50 +876,6 @@ MonoBehaviour:
           targetPort: vector3
         position: {x: 393, y: 214}
         properties:
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: localScale
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Transform
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: localScale
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Transform
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
         - field: memberName
           value:
             typeCode: 18
@@ -1409,6 +1159,7 @@ GameObject:
   - component: {fileID: 1595201752}
   - component: {fileID: 1595201751}
   - component: {fileID: 1595201750}
+  - component: {fileID: 1595201753}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1480,3 +1231,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1595201753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595201749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b22b08656223f4597057575c1b304a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

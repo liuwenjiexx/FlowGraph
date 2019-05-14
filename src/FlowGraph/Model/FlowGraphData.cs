@@ -53,7 +53,7 @@ namespace FlowGraph.Model
             set { name = value; }
         }
 
-        private bool HasDeserializeError
+        public bool HasDeserializeError
         {
             get
             {
@@ -318,11 +318,11 @@ namespace FlowGraph.Model
 
 
         }
-
+        public bool IsDeserialize;
         public void OnAfterDeserialize()
         {
             //Debug.Log(GetType().Name + ".OnAfterDeserialize");
-
+            IsDeserialize = true;
             foreach (var node in nodes)
             {
                 foreach (var targetPort in node.FlowOutputs)

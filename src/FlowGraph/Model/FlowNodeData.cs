@@ -143,7 +143,7 @@ namespace FlowGraph.Model
             return t;
         }
 
-        public static FieldInfo[] GetFields(Type type)
+        public static FieldInfo[] GetSerializeFields(Type type)
         {
             if (cachedFields == null)
                 cachedFields = new Dictionary<Type, FieldInfo[]>();
@@ -154,6 +154,7 @@ namespace FlowGraph.Model
 
             fields = null;
             List<FieldInfo> list = null;
+            list = new List<FieldInfo>();
 
             Type parent = type;
             while (parent != null)
@@ -163,8 +164,6 @@ namespace FlowGraph.Model
                     var tmp = cachedFields[parent];
                     if (tmp != null)
                     {
-                        if (list == null)
-                            list = new List<FieldInfo>();
                         list.AddRange(tmp.Reverse());
                     }
                     break;
@@ -172,11 +171,10 @@ namespace FlowGraph.Model
 
                 foreach (var field in parent.GetFields(BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance))
                 {
+                    if (field.DeclaringType != parent)
+                        continue;
                     if (!field.IsDefined(typeof(SerializeField), true))
                         continue;
-                    if (list == null)
-                        list = new List<FieldInfo>();
-
                     if (!list.Contains(field))
                     {
                         list.Add(field);
@@ -246,7 +244,7 @@ namespace FlowGraph.Model
             //node.ID = id;
             if (props != null)
             {
-                var fields = GetFields(type);
+                var fields = GetSerializeFields(type);
 
                 if (fields != null)
                 {
@@ -284,7 +282,7 @@ namespace FlowGraph.Model
                 if (properties != null)
                     properties.Clear();
 
-                var fields = GetFields(type);
+                var fields = GetSerializeFields(type);
                 if (fields != null)
                 {
                     foreach (var field in fields)

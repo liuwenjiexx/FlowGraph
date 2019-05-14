@@ -298,7 +298,7 @@ namespace FlowGraph.Editor
                 }
 
 
-                var tmp = FlowNodeData.GetFields(type);
+                var tmp = FlowNodeData.GetSerializeFields(type);
                 if (tmp != null && tmp.Length > 0)
                 {
                     if (info.dataMembers == null)

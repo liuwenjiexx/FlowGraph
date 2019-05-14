@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -241,29 +241,7 @@ MonoBehaviour:
         - field: memberName
           value:
             typeCode: 18
-            stringValue: IEnumerator WaitForSeconds(Single)
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: FlowGraph.Model.Wait
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: IEnumerator WaitForSeconds(Single)
+            stringValue: WaitForSeconds(F)System.Collections.IEnumerator
             objectValue: {fileID: 0}
             curveValue:
               serializedVersion: 2
@@ -293,30 +271,9 @@ MonoBehaviour:
               m_PreInfinity: 2
               m_PostInfinity: 2
               m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: IEnumerator WaitForSeconds(Single)
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: FlowGraph.Model.Wait
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
       variables: []
       assets: []
+      IsDeserialize: 1
     assetData: {fileID: 0}
     dataType: 1
     inputs: []

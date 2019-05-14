@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 using System.Linq;
+using System.Text;
 
 namespace FlowGraph.Model
 {
@@ -54,7 +55,7 @@ namespace FlowGraph.Model
                     RegisterMethodPorts(method, true);
             }
         }
-       
+
         public override void OnAfterDeserialize()
         {
             base.OnAfterDeserialize();
@@ -69,9 +70,72 @@ namespace FlowGraph.Model
             }
         }
 
+
+
+        static string GetTypeName(Type type)
+        {
+            if (type == typeof(void))
+                return "V";
+
+            TypeCode typeCode = Type.GetTypeCode(type);
+            if (typeCode == TypeCode.Object || typeCode == TypeCode.String)
+                return type.FullName;
+
+            switch (typeCode)
+            {
+                case TypeCode.Byte:
+                    return "B";
+                case TypeCode.Char:
+                    return "C";
+                case TypeCode.Int16:
+                    return "S";
+                case TypeCode.Int32:
+                    return "I";
+                case TypeCode.Int64:
+                    return "L";
+                case TypeCode.Single:
+                    return "F";
+                case TypeCode.Double:
+                    return "D";
+                case TypeCode.Boolean:
+                    return "Z";
+            }
+
+            return typeCode.ToString();
+        }
+
+        public static string GetMethodSignatureString(System.Reflection.MethodInfo method)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append(method.Name)
+                .Append('(');
+
+            var ps = method.GetParameters();
+            for (int i = 0; i < ps.Length; i++)
+            {
+                var p = ps[i];
+                if (i > 0)
+                    sb.Append(",");
+
+                if (p.ParameterType.IsByRef)
+                {
+                    sb.Append(GetTypeName(p.ParameterType));
+                }
+                else
+                {
+                    sb.Append(GetTypeName(p.ParameterType));
+                }
+            }
+
+            sb.Append(')')
+                .Append(GetTypeName(method.ReturnType));
+            return sb.ToString();
+        }
         protected override string GetMemberName(MemberInfo member)
         {
-            string memberName = member.ToString();
+            string memberName = GetMethodSignatureString(member as MethodInfo);
+
             return memberName;
         }
         protected override MemberInfo GetMember(Type type, string memberName)
@@ -80,7 +144,7 @@ namespace FlowGraph.Model
             {
                 foreach (var m in type.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static))
                 {
-                    if (m.ToString() == memberName)
+                    if (GetMethodSignatureString(m) == memberName)
                     {
                         return m;
                     }
