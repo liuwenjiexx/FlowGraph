@@ -172,6 +172,34 @@ MonoBehaviour:
         valueInputs: []
         position: {x: 50, y: 300}
         properties: []
+      - id: eb50a98731ca413faa247a26c56e2b05
+        typeName: CustomPropertyNode
+        flowOutputs: []
+        valueInputs: []
+        position: {x: 257, y: 222}
+        properties:
+        - field: myValue
+          value:
+            typeCode: 13
+            stringValue: 0
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        - field: rangeValue
+          value:
+            typeCode: 13
+            stringValue: 0
+            objectValue: {fileID: 0}
+            curveValue:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
       variables: []
       assets: []
       IsDeserialize: 1
