@@ -14,7 +14,7 @@ namespace FlowGraph.Editor
 
     public class FlowGraphEditorWindow : EditorWindow
     {
-        const string EditorName = "Flow Graph";
+        const string windowName = "Flow Graph";
 
 
         FlowGraphController flowController;
@@ -227,7 +227,7 @@ namespace FlowGraph.Editor
 
         void OnEnable()
         {
-            titleContent = new GUIContent(EditorName);
+            titleContent = new GUIContent(windowName);
             portLabelWidth = (int)(nodeWidth * 0.5f - portWidth - 3);
 
             if (flowNodeInfoMaps == null)

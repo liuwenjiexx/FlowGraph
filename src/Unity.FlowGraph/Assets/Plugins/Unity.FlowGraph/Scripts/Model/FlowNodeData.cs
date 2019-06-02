@@ -10,7 +10,7 @@ namespace FlowGraph.Model
 {
 
     [Serializable]
-    public class FlowNodeData : ISerializationCallbackReceiver
+    public class FlowNodeData : FlowNodeAsset, ISerializationCallbackReceiver
     {
         [SerializeField]
         private string id;

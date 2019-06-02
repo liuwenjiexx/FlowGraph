@@ -20,7 +20,7 @@ namespace FlowGraph.Model
     public abstract class ActionNode : ActionNodeBase
     {
 
-        protected abstract void Execute();
+        public abstract void Execute();
 
         public override void ExecuteContent(Flow flow)
         {
