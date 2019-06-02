@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 815812919, guid: deced41798b519646b0c54c3255810f9, type: 3}
+  m_Name: LookAtMainCamera
+  m_EditorClassIdentifier: 
+  graph:
+    name: 
+    nodes:
+    - id: c143a2e89fe9451eb25ce69639a717a3
+      typeName: FlowGraph.Model.MethodNode
+      flowOutputs: []
+      valueInputs:
+      - port: target
+        targetNodeId: 8c96281a208f42b882a9eba7cc79d3ca
+        targetPort: value
+      position: {x: 257, y: 222}
+      properties:
+      - field: isCoroutine
+        value:
+          typeCode: 3
+          stringValue: False
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+      - field: methodName
+        value:
+          typeCode: 18
+          stringValue: Void LookAt(UnityEngine.Transform)
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+      - field: methodType
+        value:
+          typeCode: 18
+          stringValue: UnityEngine.Transform
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+    - id: 8c96281a208f42b882a9eba7cc79d3ca
+      typeName: FlowGraph.Model.MethodNode
+      flowOutputs: []
+      valueInputs: []
+      position: {x: 48, y: 263}
+      properties:
+      - field: isCoroutine
+        value:
+          typeCode: 3
+          stringValue: False
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+      - field: methodName
+        value:
+          typeCode: 18
+          stringValue: UnityEngine.Camera get_main()
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+      - field: methodType
+        value:
+          typeCode: 18
+          stringValue: UnityEngine.Camera
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+    - id: 34957bbc1d22460cb275ecaa0fd1bf05
+      typeName: FlowGraph.Model.LateUpdateEvent
+      flowOutputs:
+      - port: LateUpdate
+        targetNodeId: c143a2e89fe9451eb25ce69639a717a3
+        targetPort: In
+      valueInputs: []
+      position: {x: 33, y: 130}
+      properties: []
+    variables: []
+    assets: []

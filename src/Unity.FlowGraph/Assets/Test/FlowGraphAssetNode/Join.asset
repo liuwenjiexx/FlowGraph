@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 815812919, guid: deced41798b519646b0c54c3255810f9, type: 3}
+  m_Name: Join
+  m_EditorClassIdentifier: 
+  graph:
+    name: join
+    nodes:
+    - id: 7ba2c89e69c64f018ebce53fc5096c50
+      typeName: FlowGraph.Model.GraphStartEvent
+      flowOutputs:
+      - port: Start
+        targetNodeId: 72edb9a422bd478b933b8063fc88095b
+        targetPort: In
+      valueInputs: []
+      position: {x: 50, y: 100}
+      properties: []
+    - id: fa4d6163735e41c48ea73723364ab4b6
+      typeName: FlowGraph.Model.GraphStopEvent
+      flowOutputs: []
+      valueInputs: []
+      position: {x: 50, y: 300}
+      properties: []
+    - id: 72edb9a422bd478b933b8063fc88095b
+      typeName: FlowGraph.Model.StringSetVariable
+      flowOutputs: []
+      valueInputs:
+      - port: string
+        targetNodeId: 83d07089b3bc4552b36cbe8c4bda8e7c
+        targetPort: string
+      position: {x: 221, y: 160}
+      properties:
+      - field: name
+        value:
+          typeCode: 18
+          stringValue: return
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+    - id: 54d779ba04594033b2119afb288c6da9
+      typeName: FlowGraph.Model.StringGetVariable
+      flowOutputs: []
+      valueInputs: []
+      position: {x: 58, y: 167}
+      properties:
+      - field: name
+        value:
+          typeCode: 18
+          stringValue: input1
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+    - id: 9672e532b25544939aa1b7b9d75916d1
+      typeName: FlowGraph.Model.StringGetVariable
+      flowOutputs: []
+      valueInputs: []
+      position: {x: 45, y: 244}
+      properties:
+      - field: name
+        value:
+          typeCode: 18
+          stringValue: input2
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+    - id: 83d07089b3bc4552b36cbe8c4bda8e7c
+      typeName: FlowGraph.Model.CallMethod
+      flowOutputs: []
+      valueInputs:
+      - port: a
+        targetNodeId: 54d779ba04594033b2119afb288c6da9
+        targetPort: string
+      - port: b
+        targetNodeId: 9672e532b25544939aa1b7b9d75916d1
+        targetPort: string
+      position: {x: 249, y: 242}
+      properties:
+      - field: memberName
+        value:
+          typeCode: 18
+          stringValue: System.String Join(System.String, System.String, System.String)
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+      - field: typeName
+        value:
+          typeCode: 18
+          stringValue: FlowGraph.Model.StringOperator
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+      - field: memberName
+        value:
+          typeCode: 18
+          stringValue: System.String Join(System.String, System.String, System.String)
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+      - field: typeName
+        value:
+          typeCode: 18
+          stringValue: FlowGraph.Model.StringOperator
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+      - field: isCoroutine
+        value:
+          typeCode: 3
+          stringValue: False
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+      - field: memberName
+        value:
+          typeCode: 18
+          stringValue: System.String Join(System.String, System.String, System.String)
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+      - field: typeName
+        value:
+          typeCode: 18
+          stringValue: FlowGraph.Model.StringOperator
+          objectValue: {fileID: 0}
+          curveValue:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+    variables:
+    - name: input1
+      defaultValue:
+        typeCode: 18
+        stringValue: 
+        objectValue: {fileID: 0}
+        curveValue:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+      mode: 1
+    - name: input2
+      defaultValue:
+        typeCode: 18
+        stringValue: 
+        objectValue: {fileID: 0}
+        curveValue:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+      mode: 1
+    - name: return
+      defaultValue:
+        typeCode: 18
+        stringValue: 
+        objectValue: {fileID: 0}
+        curveValue:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+      mode: 2
+    assets: []

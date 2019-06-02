@@ -1,0 +1,16 @@
+{
+    "name": "Unity.FlowGraph.Editor",
+    "references": [
+        "Unity.FlowGraph"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
