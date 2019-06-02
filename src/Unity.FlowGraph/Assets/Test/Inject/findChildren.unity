@@ -180,20 +180,19 @@ MonoBehaviour:
           targetPort: string
         position: {x: 337, y: 164}
         properties: []
-      - id: c5d3e4f2128342a6b8ffe3635926ac14
-        typeName: FlowGraph.Model.CallMethod
+      - id: a2713e4aad714a6dab3f26080b560e2c
+        typeName: FlowGraph.Model.GetProperty
         flowOutputs: []
         valueInputs:
-        - port: name
-          targetNodeId: 32b7dffefc084c809dc0f6b2d4325caf
-          targetPort: string
-        position: {x: 279, y: 276}
+        - port: this
+          targetNodeId: dc93a9570cab4d9b83c457104cad4f94
+          targetPort: gameObject
+        position: {x: 180, y: 189}
         properties:
         - field: memberName
           value:
             typeCode: 18
-            stringValue: UnityEngine.GameObject FindGameObject(UnityEngine.Transform,
-              System.String)
+            stringValue: name
             objectValue: {fileID: 0}
             curveValue:
               serializedVersion: 2
@@ -204,7 +203,7 @@ MonoBehaviour:
         - field: typeName
           value:
             typeCode: 18
-            stringValue: FlowGraph.Model.UnityActions
+            stringValue: UnityEngine.Object
             objectValue: {fileID: 0}
             curveValue:
               serializedVersion: 2
@@ -212,11 +211,19 @@ MonoBehaviour:
               m_PreInfinity: 2
               m_PostInfinity: 2
               m_RotationOrder: 4
+      - id: dc93a9570cab4d9b83c457104cad4f94
+        typeName: FlowGraph.Model.CallMethod
+        flowOutputs: []
+        valueInputs:
+        - port: name
+          targetNodeId: 32b7dffefc084c809dc0f6b2d4325caf
+          targetPort: string
+        position: {x: 275, y: 343}
+        properties:
         - field: memberName
           value:
             typeCode: 18
-            stringValue: UnityEngine.GameObject FindGameObject(UnityEngine.Transform,
-              System.String)
+            stringValue: FindGameObject(UnityEngine.Transform,System.String)UnityEngine.GameObject
             objectValue: {fileID: 0}
             curveValue:
               serializedVersion: 2
@@ -246,106 +253,9 @@ MonoBehaviour:
               m_PreInfinity: 2
               m_PostInfinity: 2
               m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.GameObject FindGameObject(UnityEngine.Transform,
-              System.String)
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: FlowGraph.Model.UnityActions
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-      - id: a2713e4aad714a6dab3f26080b560e2c
-        typeName: FlowGraph.Model.GetProperty
-        flowOutputs: []
-        valueInputs:
-        - port: this
-          targetNodeId: c5d3e4f2128342a6b8ffe3635926ac14
-          targetPort: gameObject
-        position: {x: 180, y: 189}
-        properties:
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: name
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Object
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: name
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Object
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: name
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: UnityEngine.Object
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
       variables: []
       assets: []
+      IsDeserialize: 1
     assetData: {fileID: 0}
     dataType: 1
     inputs: []

@@ -382,29 +382,7 @@ MonoBehaviour:
         - field: memberName
           value:
             typeCode: 18
-            stringValue: System.String Join(System.String, System.String, System.String)
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: FlowGraph.Model.StringOperator
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: System.String Join(System.String, System.String, System.String)
+            stringValue: Join(System.String,System.String,System.String)System.String
             objectValue: {fileID: 0}
             curveValue:
               serializedVersion: 2
@@ -427,28 +405,6 @@ MonoBehaviour:
           value:
             typeCode: 3
             stringValue: False
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: memberName
-          value:
-            typeCode: 18
-            stringValue: System.String Join(System.String, System.String, System.String)
-            objectValue: {fileID: 0}
-            curveValue:
-              serializedVersion: 2
-              m_Curve: []
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
-        - field: typeName
-          value:
-            typeCode: 18
-            stringValue: FlowGraph.Model.StringOperator
             objectValue: {fileID: 0}
             curveValue:
               serializedVersion: 2
@@ -482,6 +438,7 @@ MonoBehaviour:
             m_RotationOrder: 4
         mode: 0
       assets: []
+      IsDeserialize: 1
     assetData: {fileID: 0}
     dataType: 1
     inputs:
@@ -535,6 +492,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2105738112}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 620474607, guid: deced41798b519646b0c54c3255810f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 06f7e5c24bc30464e92515002401caab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

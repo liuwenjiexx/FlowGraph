@@ -35,7 +35,7 @@ MonoBehaviour:
       flowOutputs: []
       valueInputs:
       - port: string
-        targetNodeId: 83d07089b3bc4552b36cbe8c4bda8e7c
+        targetNodeId: 2a71397febd548f387a3dc2b01c6c84d
         targetPort: string
       position: {x: 221, y: 160}
       properties:
@@ -84,7 +84,7 @@ MonoBehaviour:
             m_PreInfinity: 2
             m_PostInfinity: 2
             m_RotationOrder: 4
-    - id: 83d07089b3bc4552b36cbe8c4bda8e7c
+    - id: 2a71397febd548f387a3dc2b01c6c84d
       typeName: FlowGraph.Model.CallMethod
       flowOutputs: []
       valueInputs:
@@ -94,34 +94,12 @@ MonoBehaviour:
       - port: b
         targetNodeId: 9672e532b25544939aa1b7b9d75916d1
         targetPort: string
-      position: {x: 249, y: 242}
+      position: {x: 264, y: 264}
       properties:
       - field: memberName
         value:
           typeCode: 18
-          stringValue: System.String Join(System.String, System.String, System.String)
-          objectValue: {fileID: 0}
-          curveValue:
-            serializedVersion: 2
-            m_Curve: []
-            m_PreInfinity: 2
-            m_PostInfinity: 2
-            m_RotationOrder: 4
-      - field: typeName
-        value:
-          typeCode: 18
-          stringValue: FlowGraph.Model.StringOperator
-          objectValue: {fileID: 0}
-          curveValue:
-            serializedVersion: 2
-            m_Curve: []
-            m_PreInfinity: 2
-            m_PostInfinity: 2
-            m_RotationOrder: 4
-      - field: memberName
-        value:
-          typeCode: 18
-          stringValue: System.String Join(System.String, System.String, System.String)
+          stringValue: Join(System.String,System.String,System.String)System.String
           objectValue: {fileID: 0}
           curveValue:
             serializedVersion: 2
@@ -144,28 +122,6 @@ MonoBehaviour:
         value:
           typeCode: 3
           stringValue: False
-          objectValue: {fileID: 0}
-          curveValue:
-            serializedVersion: 2
-            m_Curve: []
-            m_PreInfinity: 2
-            m_PostInfinity: 2
-            m_RotationOrder: 4
-      - field: memberName
-        value:
-          typeCode: 18
-          stringValue: System.String Join(System.String, System.String, System.String)
-          objectValue: {fileID: 0}
-          curveValue:
-            serializedVersion: 2
-            m_Curve: []
-            m_PreInfinity: 2
-            m_PostInfinity: 2
-            m_RotationOrder: 4
-      - field: typeName
-        value:
-          typeCode: 18
-          stringValue: FlowGraph.Model.StringOperator
           objectValue: {fileID: 0}
           curveValue:
             serializedVersion: 2
@@ -211,3 +167,4 @@ MonoBehaviour:
           m_RotationOrder: 4
       mode: 2
     assets: []
+    IsDeserialize: 1
