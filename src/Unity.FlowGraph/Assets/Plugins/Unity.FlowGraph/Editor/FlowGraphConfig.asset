@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 651609085, guid: 79952b687a94ca744b57638df35cce7f, type: 3}
+  m_Script: {fileID: 11500000, guid: b23302b59c48c9849874ec69f7f54159, type: 3}
   m_Name: FlowGraphConfig
   m_EditorClassIdentifier: 
   items:
