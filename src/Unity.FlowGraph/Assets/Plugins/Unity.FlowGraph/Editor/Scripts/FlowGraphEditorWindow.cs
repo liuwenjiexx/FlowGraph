@@ -7,7 +7,7 @@ using System.Linq;
 using System.Reflection;
 using FlowGraph.Model;
 using FlowGraph.Editor.GUIExtensions;
-
+using System.IO;
 
 namespace FlowGraph.Editor
 {
@@ -101,6 +101,10 @@ namespace FlowGraph.Editor
         private string fieldName;
         private Dictionary<Type, GenericMenu> typeMenus;
 
+        private static Texture2D icon;
+        public static float iconOffset;
+
+
         class FlowNodeInfo
         {
             public string Category;
@@ -155,8 +159,36 @@ namespace FlowGraph.Editor
                 return (int)(Screen.width * scale);
             }
         }
+        private static string packageDir;
+        public static string PackageDir
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(packageDir))
+                    packageDir = GetPackageDirectory("Unity.FlowGraph");
 
+                return packageDir;
+            }
+        }
 
+        private static string GetPackageDirectory(string packageName)
+        {
+            foreach (var dir in Directory.GetDirectories("Assets", "*", SearchOption.AllDirectories))
+            {
+                if (string.Equals(Path.GetFileName(dir), packageName, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    return dir;
+                }
+            }
+
+            string path = Path.Combine("Packages", packageName);
+            if (Directory.Exists(path))
+            {
+                return path;
+            }
+
+            return null;
+        }
 
         public static void ShowWindow(UnityEngine.Object target, string fieldName)
         {
@@ -196,16 +228,85 @@ namespace FlowGraph.Editor
             win.Show();
         }
 
+
+        public static void ShowWindow(FlowGraphController graphController)
+        {
+            var g = graphController.Graph;
+            ShowWindow(graphController, g);
+        }
+        public static void ShowWindow(UnityEngine.Object target, FlowGraphField flowGraphField)
+        {
+
+            if (flowGraphField.IsAssetData)
+            {
+                var assetData = flowGraphField.AssetData;
+                if (assetData)
+                {
+                    FlowGraphEditorWindow.ShowWindow(assetData);
+                }
+            }
+            else
+            {
+                var graphData = flowGraphField.GetFlowGraphData();
+                if (graphData == null)
+                {
+                    return;
+                }
+                FlowGraphEditorWindow.ShowWindow(target, graphData);
+            }
+        }
+
         [InitializeOnLoadMethod]
         static void Init()
         {
             Selection.selectionChanged -= Changed;
             Selection.selectionChanged += Changed;
+            EditorApplication.hierarchyWindowItemOnGUI += hierarchyWindowItemOnGUI;
 
         }
 
         static void Changed()
         {
+        }
+
+        private static Texture2D Icon
+        {
+            get
+            {
+                if (!icon)
+                    icon = AssetDatabase.LoadAssetAtPath<Texture2D>(Path.Combine(PackageDir, "Editor/Textures/icon.psd"));
+                return icon;
+            }
+        }
+        private static GUIStyle iconStyle;
+        private static GUIStyle IconStyle
+        {
+            get
+            {
+                if (iconStyle == null)
+                {
+                      iconStyle = new GUIStyle();
+                    //iconStyle.normal.background = Icon;
+                    iconStyle.padding = new RectOffset(1, 1,1, 1); 
+                }
+                return iconStyle;
+            }
+        }
+
+        static void hierarchyWindowItemOnGUI(int instanceID, Rect selectionRect)
+        {
+            GameObject go = EditorUtility.InstanceIDToObject(instanceID) as GameObject;
+            if (!go)
+                return;
+            var fg = go.GetComponent<FlowGraphController>();
+            if (fg)
+            {
+ 
+                if (GUI.Button(new Rect(selectionRect.xMax + iconOffset, selectionRect.y, selectionRect.height, selectionRect.height), Icon, IconStyle))
+                {
+                    ShowWindow(fg);
+                }
+            }
         }
 
         private void OnSelectionChange()
@@ -2636,7 +2737,7 @@ namespace FlowGraph.Editor
             {
                 menu = new GenericMenu();
                 string menuItemName;
-                foreach (var pInfo in type.GetProperties().OrderBy(o=>o.Name))
+                foreach (var pInfo in type.GetProperties().OrderBy(o => o.Name))
                 {
                     //Network auto generate property
                     if (pInfo.Name.StartsWith("Network"))
