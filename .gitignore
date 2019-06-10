@@ -1,3 +1,4 @@
 /.vs/
 bin/
 obj/
+/src/Unity.FlowGraph/Packages/manifest.json

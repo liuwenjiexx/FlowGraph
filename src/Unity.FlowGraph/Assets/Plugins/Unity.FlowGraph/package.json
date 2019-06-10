@@ -9,5 +9,5 @@
     "flowgraph"
   ],
   "category": "Unity",
-  "repoPackagePath": "../../Packages"
+  "repoPackagePath": "../../Build/Packages"
 }
