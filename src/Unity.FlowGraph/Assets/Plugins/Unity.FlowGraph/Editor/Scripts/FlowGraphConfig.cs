@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using UnityEditor;
 using System.Linq;
+using System.IO;
 
 namespace FlowGraph.Editor
 {
@@ -14,8 +15,7 @@ namespace FlowGraph.Editor
 
         public List<IncludeTypeItem> items;
         private static FlowGraphConfig instance;
-        const string EditorFolderGuid = "f68c866efb551b84f88ddca0bf3e9a46";
-        const string ConfigAssetGuid = "1d2f84066837a474b8c1fc697883108b";
+        
 
         public static FlowGraphConfig Instance
         {
@@ -24,17 +24,18 @@ namespace FlowGraph.Editor
                 if (!instance)
                 {
                     string path;
-                    path = AssetDatabase.GUIDToAssetPath(ConfigAssetGuid);
-                    if (!string.IsNullOrEmpty(path))
+                    path = Path.Combine(FlowGraphEditorWindow.PackageDir, "Editor/FlowGraphConfig.asset");
+                    if (File.Exists(path))
                         instance = AssetDatabase.LoadAssetAtPath<FlowGraphConfig>(path);
                     if (!instance)
                     {
-                        path = AssetDatabase.GUIDToAssetPath(EditorFolderGuid);
-                        if (string.IsNullOrEmpty(path))
-                        {
-                            path = "Assets";
-                        }
-                        instance = Create(path + "/FlowGraphConfig.asset");
+                        //path = AssetDatabase.GUIDToAssetPath(EditorFolderGuid);
+                        //if (string.IsNullOrEmpty(path))
+                        //{
+                        //    path = "Assets";
+                        //}
+                        //instance = Create(path + "/FlowGraphConfig.asset");
+                        instance = CreateInstance<FlowGraphConfig>();
                     }
                 }
                 return instance;

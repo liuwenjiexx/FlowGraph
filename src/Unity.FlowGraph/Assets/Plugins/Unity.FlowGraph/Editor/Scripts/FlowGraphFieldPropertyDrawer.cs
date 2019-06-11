@@ -55,7 +55,7 @@ namespace FlowGraph.Editor
             {
                 if (assetData)
                 {
-                    FlowGraphEditorWindow.ShowWindow(assetData);
+                    //FlowGraphEditorWindow.ShowWindow(assetData);
                     graphData = assetData.Data;
                 }
             }

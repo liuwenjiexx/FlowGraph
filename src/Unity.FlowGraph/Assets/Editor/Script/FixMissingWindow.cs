@@ -5,6 +5,7 @@ using UnityEditor;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Reflection;
 
 public class FixMissingWindow : EditorWindow
 {
@@ -170,9 +171,27 @@ public class FixMissingWindow : EditorWindow
             }
         }
 
+        obj= EditorGUILayout.ObjectField(obj, typeof(Object), false);
 
+        if (GUILayout.Button("list meta guid"))
+        {
+
+            StringBuilder sb = new StringBuilder();
+
+            //foreach (var type in (from o in System.AppDomain.CurrentDomain.GetAssemblies()
+            //                      .Where(ass => ass.GetName().Name== "Assembly-CSharp" || ass.GetName().Name == "Assembly-CSharp-Editor" ass.GetName().Name == "Assembly-CSharp")
+            //                      Assembly.GetExecutingAssembly().GetTypes()
+            //                      where (typeof(Component).IsAssignableFrom(o)) || (o.IsSubclassOf(typeof(ScriptableObject)))
+            //                      select o))
+            //{
+            //    sb.AppendFormat("{0}: {1}", type.Name, "");
+            //}
+
+            Debug.Log(sb.ToString());
+        }
 
     }
+    public Object obj;
 
     class PartInfo
     {

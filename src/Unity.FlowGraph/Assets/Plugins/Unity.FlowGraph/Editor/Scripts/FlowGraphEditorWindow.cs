@@ -226,6 +226,7 @@ namespace FlowGraph.Editor
             win.fieldName = null;
             win.windowOffset = -windowCenter;
             win.Show();
+            
         }
 
 
@@ -257,7 +258,7 @@ namespace FlowGraph.Editor
         }
 
         [InitializeOnLoadMethod]
-        static void Init()
+        static void InitializeOnLoadMethod()
         {
             Selection.selectionChanged -= Changed;
             Selection.selectionChanged += Changed;
@@ -286,8 +287,9 @@ namespace FlowGraph.Editor
                 if (iconStyle == null)
                 {
                       iconStyle = new GUIStyle();
-                    //iconStyle.normal.background = Icon;
-                    iconStyle.padding = new RectOffset(1, 1,1, 1); 
+                    iconStyle.normal.background = Icon;                    
+                    iconStyle.overflow = new RectOffset(-1, -1, -1, -1);
+                    
                 }
                 return iconStyle;
             }
@@ -301,8 +303,7 @@ namespace FlowGraph.Editor
             var fg = go.GetComponent<FlowGraphController>();
             if (fg)
             {
- 
-                if (GUI.Button(new Rect(selectionRect.xMax + iconOffset, selectionRect.y, selectionRect.height, selectionRect.height), Icon, IconStyle))
+                if (GUI.Button(new Rect(selectionRect.xMax + iconOffset-selectionRect.height, selectionRect.y, selectionRect.height, selectionRect.height), GUIContent.none,IconStyle))
                 {
                     ShowWindow(fg);
                 }
