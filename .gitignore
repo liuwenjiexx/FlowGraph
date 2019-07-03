@@ -1,3 +1,17 @@
 /.vs/
 bin/
 obj/
+/Packages/manifest.json
+/Library
+/obj
+/temp
+/*.csproj
+/*.sln
+/.vs
+/*.suo
+/*.userprefs
+/*.unityproj
+/ProjectSettings/ProjectVersion.txt
+/win/
+/*.unitypackage
+/Logs

@@ -1,0 +1,13 @@
+{
+  "name": "unity.flowgraph",
+  "displayName": "Flow Graph",
+  "version": "0.0.2",
+  "unity": "2018.3",
+  "description": "flow graph",
+  "keywords": [
+    "unity",
+    "flowgraph"
+  ],
+  "category": "Unity",
+  "repoPackagePath": "Build/Packages"
+}
