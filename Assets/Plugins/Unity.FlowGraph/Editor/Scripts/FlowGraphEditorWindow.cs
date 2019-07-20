@@ -2506,7 +2506,7 @@ namespace FlowGraph.Editor
                     GUIContent content;
                     content = new GUIContent(defaultValue);
                     size = portInputDefaultStyle.CalcSize(content);
-                    GUI.Label(  new Rect(rect.x - size.x-3, rect.y+ portInputDefaultStyle.margin.top, size.x, size.y), content, portInputDefaultStyle);
+                    GUI.Label(new Rect(rect.x - size.x - 3, rect.y + portInputDefaultStyle.margin.top, size.x, size.y), content, portInputDefaultStyle);
                 }
             }
             //if (Event.current.type == EventType.KeyDown)
@@ -2855,7 +2855,8 @@ namespace FlowGraph.Editor
                     menuItemName = pInfo.DeclaringType.Name + "/" + pInfo.Name;
                     if (pInfo.CanRead)
                     {
-                        if (pInfo.GetGetMethod().IsStatic)
+                        var getter = pInfo.GetGetMethod(false);
+                        if (getter == null || getter.IsStatic)
                             continue;
                         menu.AddItem(new GUIContent("Get/" + menuItemName, "Property"), false, (o) =>
                         {
@@ -2876,7 +2877,8 @@ namespace FlowGraph.Editor
 
                     if (pInfo.CanWrite)
                     {
-                        if (pInfo.GetSetMethod().IsStatic)
+                        var setter = pInfo.GetSetMethod(false);
+                        if (setter == null || setter.IsStatic)
                             continue;
                         menu.AddItem(new GUIContent("Set/" + menuItemName, "Property"), false, (o) =>
                         {
@@ -2955,9 +2957,12 @@ namespace FlowGraph.Editor
             if (AssetDatabase.IsNativeAsset(instanceID))
             {
                 FlowGraphAsset asset = EditorUtility.InstanceIDToObject(instanceID) as FlowGraphAsset;
-                FlowGraphEditorWindow.ShowWindow(asset);
-                return true;
-            }
+                if (asset)
+                {
+                    FlowGraphEditorWindow.ShowWindow(asset);
+                    return true;
+                }
+            } 
             return false;
         }
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -50,7 +50,6 @@ LightmapSettings:
     m_BounceScale: 1
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
-    m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
@@ -117,7 +116,8 @@ NavMeshSettings:
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1713718459}
@@ -135,14 +135,16 @@ GameObject:
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713718456}
   m_Enabled: 1
 --- !u!20 &1713718458
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713718456}
   m_Enabled: 1
   serializedVersion: 2
@@ -151,6 +153,7 @@ Camera:
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -182,7 +185,8 @@ Camera:
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713718456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
@@ -195,7 +199,8 @@ Transform:
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713718456}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -210,7 +215,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.StringValue
         flowOutputs: []
         valueInputs: []
-        position: {x: 22, y: 68}
+        position: {x: 23, y: 62}
         properties:
         - field: value
           value:
@@ -224,7 +229,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.BooleanValue
         flowOutputs: []
         valueInputs: []
-        position: {x: 25, y: 153}
+        position: {x: 20, y: 132}
         properties:
         - field: value
           value:
@@ -238,7 +243,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.ColorValue
         flowOutputs: []
         valueInputs: []
-        position: {x: 409, y: 248}
+        position: {x: 396, y: 160}
         properties:
         - field: value
           value:
@@ -252,7 +257,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.UnityObjectValue
         flowOutputs: []
         valueInputs: []
-        position: {x: 26, y: 259}
+        position: {x: 25, y: 203}
         properties:
         - field: value
           value:
@@ -266,7 +271,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.Vector3Value
         flowOutputs: []
         valueInputs: []
-        position: {x: 208, y: 391}
+        position: {x: 191, y: 341}
         properties:
         - field: value
           value:
@@ -280,7 +285,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.Vector2Value
         flowOutputs: []
         valueInputs: []
-        position: {x: 209, y: 250}
+        position: {x: 192, y: 202}
         properties:
         - field: value
           value:
@@ -294,7 +299,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.Vector4Value
         flowOutputs: []
         valueInputs: []
-        position: {x: 210, y: 462}
+        position: {x: 193, y: 405}
         properties:
         - field: value
           value:
@@ -322,7 +327,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.Int32Value
         flowOutputs: []
         valueInputs: []
-        position: {x: 193, y: 155}
+        position: {x: 189, y: 134}
         properties:
         - field: value
           value:
@@ -336,7 +341,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.AnimationCurveValue
         flowOutputs: []
         valueInputs: []
-        position: {x: 406, y: 319}
+        position: {x: 395, y: 227}
         properties:
         - field: value
           value:
@@ -350,7 +355,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.Vector2IntValue
         flowOutputs: []
         valueInputs: []
-        position: {x: 209, y: 318}
+        position: {x: 193, y: 269}
         properties:
         - field: value
           value:
@@ -364,7 +369,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.ComponentValue
         flowOutputs: []
         valueInputs: []
-        position: {x: 27, y: 386}
+        position: {x: 23, y: 341}
         properties:
         - field: value
           value:
@@ -378,7 +383,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.GameObjectValue
         flowOutputs: []
         valueInputs: []
-        position: {x: 27, y: 323}
+        position: {x: 25, y: 271}
         properties:
         - field: value
           value:
@@ -392,7 +397,7 @@ MonoBehaviour:
         typeName: FlowGraph.Model.TransformValue
         flowOutputs: []
         valueInputs: []
-        position: {x: 27, y: 453}
+        position: {x: 25, y: 406}
         properties:
         - field: value
           value:
@@ -412,7 +417,8 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1941195378}
@@ -428,7 +434,8 @@ GameObject:
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941195376}
   m_Enabled: 1
   serializedVersion: 8
@@ -465,7 +472,8 @@ Light:
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941195376}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}

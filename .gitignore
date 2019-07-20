@@ -16,3 +16,5 @@ obj/
 /*.unitypackage
 /Logs
 /Build
+/ProjectSettings/
+/LogExtension.json
